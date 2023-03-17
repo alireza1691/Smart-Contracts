@@ -5,6 +5,7 @@
 */
 pragma solidity ^0.8.17;
 
+
 contract myStorage {
 
     // We need structure for each user which has string type and uint256 type that can store any kind of data from user
