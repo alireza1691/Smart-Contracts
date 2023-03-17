@@ -8,6 +8,7 @@ pragma solidity ^0.8.17;
 
 // import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "./IERC20.sol";
+
 contract GetData {
 
     constructor() {
@@ -20,11 +21,18 @@ contract GetData {
     function getAllowance (address owner, address spender, address tokenAddress) external view returns(uint256) {
         return IERC20(tokenAddress).allowance(owner, spender);
     }
-    function decreaseAllowance (address tokenAddress, address forAddress,address tokenAddress) external {
-        // tokenAddress.delegatecall(abi.encodeWithSignature("setVars(uint256)", _num)
+    function decreaseAllowance (address tokenAddress, address forAddress,uint256 subtractedValue) external returns(bool){
+        (bool ok,) = tokenAddress.delegatecall(abi.encodeWithSignature("decreaseAllowance(address, uint256)",forAddress,subtractedValue));
+        return ok;
         // using delegatecall
     }
-    function increaseAllowance (address tokenAddress, address forAddress) external {
+    function increaseAllowance (address tokenAddress, address forAddress, uint256 addedValue) external returns(bool){
+        (bool ok,) = tokenAddress.delegatecall(abi.encodeWithSignature("increaseAllowance(address, uint256)",forAddress,addedValue));
+        return ok;
         // using delegatecall
     }
+    function transferFrom (address tokenAddress, address from, address to, uint256 amount) external {
+        IERC20(tokenAddress).transferFrom(from, to, amount);
+    }
+
 }
