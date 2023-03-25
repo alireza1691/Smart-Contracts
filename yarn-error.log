@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/alirezamac/.nvm/versions/node/v18.0.0/bin/node /usr/local/bin/yarn add @nomiclabs/hardhat-ethers/dist
+  /Users/alirezamac/.nvm/versions/node/v18.0.0/bin/node /usr/local/bin/yarn add ethers-lib
 
 PATH: 
   /Users/alirezamac/.nvm/versions/node/v18.0.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/alirezamac/.nvm/versions/node/v18.0.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/alirezamac/.cargo/bin:/opt/homebrew/bin/:/opt/homebrew/bin/
@@ -14,8 +14,8 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@nomiclabs%2fhardhat-ethers/dist: Request "https://registry.yarnpkg.com/@nomiclabs%2fhardhat-ethers/dist" returned a 405
-      at params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66154:18)
+  Error: https://registry.yarnpkg.com/ethers-lib: Not found
+      at params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66145:18)
       at self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140890:22)
       at Request.emit (node:events:527:28)
       at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141862:10)
@@ -30,6 +30,7 @@ npm manifest:
   {
     "dependencies": {
       "@openzeppelin/contracts": "^4.8.2",
+      "@tsconfig/node16": "^1.0.3",
       "ethereum-waffle": "^4.0.10",
       "hardhat": "^2.13.0",
       "hardhat-deploy": "^0.11.25"
@@ -1081,7 +1082,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@tsconfig/node14/-/node14-1.0.3.tgz#e4386316284f00b98435bf40f72f75a09dabf6c1"
     integrity sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==
   
-  "@tsconfig/node16@^1.0.2":
+  "@tsconfig/node16@^1.0.2", "@tsconfig/node16@^1.0.3":
     version "1.0.3"
     resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.3.tgz#472eaab5f15c1ffdd7f8628bd4c4f753995ec79e"
     integrity sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==
