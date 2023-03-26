@@ -13,7 +13,7 @@ contract New is ERC20 {
         
     }
 
-    function verifySignature(address signer, string memory message, bytes memory sig) public returns (bool) {
+    function verifySignature(address signer, string memory message, bytes memory sig) public pure returns (bool) {
         bytes32 messageHash = getMessageHash(message);
         bytes32 ethSignedMessageHash = getEthSignedMessageHash(messageHash);
         return recover(ethSignedMessageHash, sig) == signer;
