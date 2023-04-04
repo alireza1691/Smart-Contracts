@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: SEE LICENSE IN LICENSE
 pragma solidity ^0.8.17;
 
-/// @title A title that should describe the contract/interface
-/// @author The name of the author
-/// @notice Explain to an end user what this does
-/// @dev Explain to a developer any extra details
+/// @title This is a simple collateral contract which is going to hold a entered amount, util it users allowed specific address to withdraw.
+/// @author Alireza Haghsheas
+/// @notice This contract developed just for learning, and need more development to use on mainnet networks.
+/// @dev It is too simple and doesn't need any extra information, but just FYI we can add functionality to deposit and withdraw ERC20 tokens.
 
 contract CollateralETH {
 

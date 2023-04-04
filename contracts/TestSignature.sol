@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 /// @notice Explain to an end user what this does
 /// @dev Explain to a developer any extra details
 
-contract New is ERC20 {
+contract TestSignature is ERC20 {
     constructor(string memory name, string memory symbol) ERC20( name, symbol ) {
         
     }
