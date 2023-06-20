@@ -6,8 +6,7 @@ pragma solidity ^0.8.17;
 /// @notice This contract is just for learning to develop smart contract and to get balance and allowance there is more simple ways.
 /// @dev Explain to a developer any extra details
 
-// import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "./IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 contract GetData {
 
