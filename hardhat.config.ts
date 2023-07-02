@@ -9,7 +9,7 @@ const config: HardhatUserConfig = {
       chainId: 31337,
     },
     localhost: {
-      chainId: 1337,
+      chainId: 31337,
       url: "http://127.0.0.1:8545",
       // accounts: privateKey !== undefined ? [privateKey] : [],
     },
