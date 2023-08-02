@@ -21,7 +21,7 @@ contract CollateralETH {
     mapping (uint256 => Collateral) public counterToCollateral;
     mapping (uint256 => uint) public votes;
 
-
+    //
     function deposit(address spender, address witness) external payable returns(uint256){
         Collateral memory newCollateral = Collateral(msg.value,msg.sender,spender,witness);
         counterToCollateral[counter]= newCollateral;
